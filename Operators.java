@@ -190,6 +190,90 @@ T           he general format is:
        y = (x == 20) ? 61: 90;  
        System.out.println("Value of y is: " + y);  
 
+       System.out.println("\n-------------------------");
+
+     /*
+     7.Bitwise Operators
+       Bitwise operators are used to perform the manipulation of individual bits of a number.
+        They can be used with any integral type (char, short, int, etc.).
+        They are used when performing update and query operations of the Binary indexed trees. 
+
+        Now let’s look at each one of the bitwise operators in Java: 
+
+        (i). Bitwise OR (|) 
+
+            This operator is a binary operator, denoted by ‘|’.
+             It returns bit by bit OR of input values, i.e., if either of the bits is 1, it gives 1, else it shows 0.
+
+        (ii).Bitwise AND (&)
+
+            This operator is a binary operator, denoted by ‘&.’ 
+            It returns bit by bit AND of input values, i.e., if both bits are 1, it gives 1, else it shows 0. 
+
+        (iii).Bitwise XOR (^) 
+
+             This operator is a binary operator, denoted by ‘^.’ 
+             It returns bit by bit XOR of input values, i.e., if corresponding bits are different, it gives 1, else it shows 0. 
+
+        (iv).Bitwise Complement (~)
+
+            This operator is a unary operator, denoted by ‘~.’ 
+            It returns the one’s complement representation of the input value, i.e., with all bits inverted, which means it makes every 0 to 1, and every 1 to 0. 
+
+     */
+
+
+    System.out.println("Bitwise Operators\n");
+       // Initial values
+		int p = 5;
+		int r = 7;
+
+		// bitwise and
+		// 0101 & 0111=0101 = 5
+		System.out.println("p&r = " + (p & r));
+
+		// bitwise or
+		// 0101 | 0111=0111 = 7
+		System.out.println("p|r = " + (p | r));
+
+		// bitwise xor
+		// 0101 ^ 0111=0010 = 2
+		System.out.println("p^r = " + (p ^ r));
+
+		// bitwise not
+		// ~0101=1010
+		// will give 2's complement of 1010 = -6
+		System.out.println("~p = " + ~p);
+
+		// can also be combined with
+		// assignment operator to provide shorthand
+		// assignment
+		// a=a&b
+		p &= r;
+		System.out.println("p= " + p);
+
+        System.out.println("\n-------------------------");
+
+     /*
+     8.Shift Operator in Java
+      
+        Operators in Java are used to performing operations on variables and values.  
+
+        Examples of operators: +, -, *,  /,  >>, <<.>>>
+
+     */
+
+    System.out.println("Shift Operator\n");
+
+    int number = 8;
+        
+    // 2 bit signed right shift
+    int Ans = number >> 2;
+    
+    System.out.println(Ans); 
+    System.out.println(number >>> 2);
+    
+
 	}
 }
 class Data1 {
