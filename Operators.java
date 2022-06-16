@@ -58,7 +58,7 @@ public class Operators {
       
        ++m;                 
  
-       System.out.println("++a = "+m);    //prints 22 
+       System.out.println("++m = "+m);    //prints 22 
  
        System.out.println("++m ="+ ++m);      //prints 23 
  
